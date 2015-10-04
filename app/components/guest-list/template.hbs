@@ -1,1 +1,14 @@
-{{yield}}
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Message</th>
+  </tr>
+  {{#each guests as | guest |}}
+    <tr class='guest'>
+      <td>{{guest.firstname}} {{guest.lastname}}</td>
+      <td>{{guest.location}}</td>
+      <td>{{guest.message}}</td> 
+    </tr>
+  {{/each}}
+</table>

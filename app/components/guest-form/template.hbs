@@ -1,1 +1,21 @@
-{{yield}}
+<table>
+  <tr>
+    <th>First Name</th>
+    <td><input class='first-name' onkeyup={{action (mut guest.firstname) value='target.value'}} type='name'></td>
+  </tr>
+  <tr>
+    <th>Last Name</th>
+    <td><input class='last-name' onkeyup={{action (mut guest.lastname) value='target.value'}} type='name'></td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td><input class='location' onkeyup={{action (mut guest.location) value='target.value'}} type='location'></td>
+  </tr>
+  <tr>
+    <th>Message</th>
+    <td><textarea class='message' onkeyup={{action (mut guest.message) value='target.value'}}></textarea></td>
+  </tr>
+  <tr>
+    <td><button class='save' onclick={{action 'submit'}}>Add Me</button></td>
+  </tr>
+</table>

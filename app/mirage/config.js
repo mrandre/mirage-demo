@@ -3,6 +3,13 @@ export default function() {
   // These comments are here to help you get started. Feel free to delete them.
 
   this.get('/guests');
+  this.post('/guests', (db, request) => {
+    let response = JSON.parse(request.requestBody);
+    let guest = response.guest;
+    db.guests.insert(guest);
+    debugger; 
+  });
+
   /*
     Config (with defaults).
 

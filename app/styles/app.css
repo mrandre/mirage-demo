@@ -15,14 +15,15 @@ body {
 }
 
 h1 {
-  text-align: center;
-  margin: -7px 0;
+  text-align: left;
+  margin: -7px auto;
+  width: 80%;
   color: #fff;
   text-shadow: 0 0 10px #4E4E4E;
 }
 
 h2.page-title {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .guest-list, .guest-form {
@@ -48,6 +49,8 @@ h2.page-title {
 
 .add-button {
   padding: 20px 0;
+  float: right;
+  margin-right: 10px;
 }
 
 .add-button a {
@@ -71,16 +74,15 @@ h2.page-title {
 }
 
 .guest-form label {
-  padding: 20px;
+  padding: 10px;
   padding-bottom: 5px;
   color: #555;
   width: 200px;
   font-weight: bold;
 }
 
-
 .guest-form div {
-  padding: 5px 20px 20px;
+  padding: 5px 10px 20px;
 }
 
 .guest-form input,
@@ -90,6 +92,7 @@ h2.page-title {
   border: 1px solid #ccc;
   border-radius: 2px;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .guest-form button {

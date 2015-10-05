@@ -1,21 +1,16 @@
-<table>
-  <tr>
-    <th>First Name</th>
-    <td><input class='first-name' onkeyup={{action (mut guest.firstname) value='target.value'}} type='name'></td>
-  </tr>
-  <tr>
-    <th>Last Name</th>
-    <td><input class='last-name' onkeyup={{action (mut guest.lastname) value='target.value'}} type='name'></td>
-  </tr>
-  <tr>
-    <th>Location</th>
-    <td><input class='location' onkeyup={{action (mut guest.location) value='target.value'}} type='location'></td>
-  </tr>
-  <tr>
-    <th>Message</th>
-    <td><textarea class='message' onkeyup={{action (mut guest.message) value='target.value'}}></textarea></td>
-  </tr>
-  <tr>
-    <td><button class='save' onclick={{action 'submit'}}>Add Me</button></td>
-  </tr>
-</table>
+<h2 class='page-title'>Guest List Form</h2>
+<div class='guest-form'>
+  <label>First Name</label>
+  <div><input class='first-name' onkeyup={{action (mut guest.firstname) value='target.value'}} type='name'></div>
+
+  <label>Last Name</label>
+  <div><input class='last-name' onkeyup={{action (mut guest.lastname) value='target.value'}} type='name'></div>
+
+  <label>Location</label>
+  <div><input class='location' onkeyup={{action (mut guest.location) value='target.value'}} type='location'></div>
+  
+  <label>Message</label>
+  <div><textarea class='message' rows='8' cols='40' onkeyup={{action (mut guest.message) value='target.value'}}></textarea></div>
+
+  <div><button class='save' onclick={{action 'submit'}}>Add Me</button></div>
+</div>

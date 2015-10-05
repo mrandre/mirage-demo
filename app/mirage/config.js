@@ -7,7 +7,6 @@ export default function() {
     let response = JSON.parse(request.requestBody);
     let guest = response.guest;
     db.guests.insert(guest);
-    debugger; 
   });
 
   /*
